@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/seleccionRodajeFragment">
+
+    <fragment
+        android:id="@+id/seleccionRodajeFragment"
+        android:name="ivan.diaz.dominguez.castingapp.SeleccionRodajeFragment"
+        android:label="seleccion_rodaje_fragment"
+        tools:layout="@layout/seleccion_rodaje_fragment" >
+        <action
+            android:id="@+id/action_seleccionRodajeFragment_to_seleccionCandidatos"
+            app:destination="@id/seleccionCandidatos" />
+    </fragment>
+    <fragment
+        android:id="@+id/seleccionCandidatos"
+        android:name="ivan.diaz.dominguez.castingapp.SeleccionCandidatos"
+        android:label="seleccion_candidatos_fragment"
+        tools:layout="@layout/seleccion_candidatos_fragment" >
+        <action
+            android:id="@+id/action_seleccionCandidatos_to_confirmacionAccion"
+            app:destination="@id/confirmacionAccion" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmacionAccion"
+        android:name="ivan.diaz.dominguez.castingapp.ConfirmacionAccion"
+        android:label="confirmacion_accion_fragment"
+        tools:layout="@layout/confirmacion_accion_fragment" >
+        <action
+            android:id="@+id/action_confirmacionAccion_to_seleccionRodajeFragment"
+            app:destination="@id/seleccionRodajeFragment" />
+    </fragment>
+</navigation>
