@@ -1,0 +1,11 @@
+
+Bueno, me ha costado la vida que encaje todo y he dormido poco, pero aqui esta.
+
+Problemas.
+
+-La aplicacion crashea a partir del tercer fragment.
+Es principalmente porque me surge un error al crear la base de datos y, honestamente, me he llevado los dos ultimos dias con ello.
+
+-Falta el fragment de ayuda tambien, puesto que lo iba a dejar para el ultimo momento. pero no me supone un problema muy grande implementarlo en unos dias.
+
+Aparte de eso, si no se me salta nada, deberia estar todo en orden!
